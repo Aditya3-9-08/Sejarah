@@ -5,14 +5,28 @@ body {
     background-color: #f4f4f4;
 }
 
-header {
+.navbar {
     background-image: url(Gambar/foto\ atas.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    color: #ffffff;
-    padding: 45px 0;
+    background-repeat: no-repeat;
+    padding: 70px 0;
+}
+
+.navigasi {
     text-align: center;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;   
+}
+
+.navigasi a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.text {
+    display: none;
+    margin-top: 10px;
 }
 
 header h1 {
