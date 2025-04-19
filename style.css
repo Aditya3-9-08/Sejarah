@@ -6,10 +6,12 @@ body {
 }
 
 header {
-    background: #009dff;
+    /* background: #009dff; */
+    background-image: url(Gambar/BKR\ announced\ the\ independence\ of\ Indonesia\,\ 18\ August\ 1945_.jpeg);
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
+    font-family: "Open Sans", sans-serif;
 }
 
 header h1 {
@@ -31,7 +33,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-.lalal {
+.p{
     padding: 20px;
     margin: 20px;
     background: #ffffff;
@@ -51,6 +53,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-.lalal:hover{
+.p:hover{
     box-shadow: 0 5px 30px black;
 }
