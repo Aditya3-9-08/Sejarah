@@ -20,7 +20,7 @@ body {
     padding: 70px 0;
     height: 70px;
     position: relative;
-    box-shadow: inset 0px -150px 30px 18px rgba(0, 0, 0, 0.669);
+    box-shadow: inset 0px -150px 30px 18px rgba(0, 0, 0, 0.623);
     backdrop-filter: blur(15px);
 }
 
@@ -34,11 +34,6 @@ body {
     color: #ffffff;
     text-decoration: none;
     margin: 0 1rem;
-}
-
-.navigasi :hover {
-    background-color: #6e5440;
-    border-radius: 10px;
 }
 
 .text {
