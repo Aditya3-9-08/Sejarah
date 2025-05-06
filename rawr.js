@@ -1,17 +1,31 @@
 function muncul(id) {
-    // Sembunyikan semua elemen dengan class 'options'
-    const allOptions = document.querySelectorAll('.options');
-    allOptions.forEach(option => {
-        if (option.id !== id) {
-            option.style.display = 'none';
+    // Sembunyikan semua elemen dengan class "text"
+    const allTexts = document.querySelectorAll('.text');
+    allTexts.forEach(function(text) {
+        if (text.id !== id) {
+            text.style.display = 'none';
         }
     });
 
-    // Toggle tampilan options yang diklik
-    const current = document.getElementById(id);
-    if (current.style.display === 'block') {
-        current.style.display = 'none';
+    // Toggle elemen yang dipilih
+    const selected = document.getElementById(id);
+    if (selected.style.display === 'block') {
+        selected.style.display = 'none';
     } else {
-        current.style.display = 'block';
+        selected.style.display = 'block';
     }
+}
+
+function scrolotomatis(id) {
+    const target = document.getElementById(id);
+    const offset = 150; // Ubah sesuai tinggi navbar kamu
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const elementRect = target.getBoundingClientRect().top;
+    const elementPosition = elementRect - bodyRect;
+    const offsetPosition = elementPosition - offset;
+
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+    });
 }

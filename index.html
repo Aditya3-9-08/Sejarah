@@ -17,17 +17,27 @@
         <br>
         <br>
         <div class="navigasi">   
-            <a href="#setting">Setting Pertempuran</a>
-            <a href="#penjajah">Penjajah</a>
-            <a href="#alasan">Alasan Menjajah</a>
-            <a href="#tokoh">Tokoh Pertempuran</a>
-            <a href="#strategi">Strategi Pertempuran</a>
-            <a href="#hasil">Hasil Pertempuran</a>
-            <a href="#nilai">Nilai yang Dapat Diterapkan</a>
+            <a href="#setting" onclick="scrolotomatis('target1')">Setting Pertempuran</a>
+            <a href="#penjajah" onclick="scrolotomatis('target2')">Penjajah</a>
+            <a href="#alasan" onclick="scrolotomatis('target3')">Alasan Menjajah</a>
+            <a href="#tokoh" onclick="scrolotomatis('target4')">Tokoh Pertempuran</a>
+            <a href="#strategi" onclick="scrolotomatis('target5')">Strategi Pertempuran</a>
+            <a href="#hasil" onclick="scrolotomatis('target6')">Hasil Pertempuran</a>
+            <a href="#nilai" onclick="scrolotomatis('target7')">Nilai yang Dapat Diterapkan</a>
         </div>
     </nav>
+
+    <div class="deskripsi">
+        <h1>Deskripsi</h1>
+        <div class="deskripsi-konten">
+            <p>Pertempuran Ambarawa, yang juga dikenal sebagai Palagan Ambarawa, adalah pertempuran bersejarah yang terjadi di Ambarawa, Jawa Tengah, antara pasukan Tentara Keamanan Rakyat (TKR) dan Tentara Inggris (Sekutu) dari tanggal 20 November hingga 15 Desember 1945. Pertempuran ini merupakan bagian dari Revolusi Nasional Indonesia dan menjadi simbol perlawanan bangsa Indonesia terhadap penjajahan asing pasca kemerdekaan.</p>
+            <img src="Gambar/des.jpg" alt="Pertempuran Ambarawa">
+        </div>
+    </div>
+    
+    
     <!-- Pertanyaan -->
-    <div class="p" onclick="muncul('options1')">
+    <div class="p" onclick="muncul('options1')" id="target1">
         <h2>Setting Pertempuran</h2>
         <div class="text" id="options1">
                 <p> Waktu :
@@ -47,7 +57,7 @@
         </div>
     </div>
 
-    <div class="p" onclick="muncul('options2')">
+    <div class="p" onclick="muncul('options2')" id="target2">
         <h2>Penjajah</h2>
         <div class="text" id="options2">
                 <p>1. Sekutu (Inggris) :
@@ -69,7 +79,7 @@
         </div>
     </div>
 
-    <div class="p" onclick="muncul('options3')">
+    <div class="p" onclick="muncul('options3')" id="target3">
         <h2>Alasan Penjajah</h2>
         <div class="text" id="options3">
                 <p>1.Sekutu (Inggris) :
@@ -88,23 +98,93 @@
         </div>
     </div>
 
-    <div class="p" onclick="muncul('options4')">
+    <div class="p" onclick="muncul('options4')" id="target4">
         <h2>Tokoh Pertempuran</h2>
         <div class="text" id="options4">
-                <p>
-                    Tokoh-tokoh yang terlibat dalam Pertempuran Ambarawa adalah :
+            <div style="display: flex; gap: 20px;">
+                <div style="display: flex; flex-direction: column; align-items: center; max-width: 300px; text-align: center;">
+                  <img src="Gambar/WhatsApp Image 2025-05-06 at 17.00.03_72e615ca.jpg" alt="Gambar Jenderal Sudirman" width="90">
+                  <p style="color: white; padding: 1.4rem 5%;">
+                    GPH Djatikusumo :
                     <br>
                     <br>
+                    Komandan divisi IV yang bertugas melacak dan mengepung pasukan asing.
+                  </p>
+                </div>
+                
+                <div style="display: flex; flex-direction: column; align-items: center; max-width: 300px; text-align: center;">
+                  <img src="Gambar/kh saifudim.jpg" alt="Gambar Jenderal Sudirman" width="90">
+                  <p style="color: white; padding: 1.4rem 5%;">
+                    K.H. Saifuddin Zuhri :
+                    <br>
+                    <br>
+                    Ulama pemimpin Laskar Hizbullah yang berjuang bersama TKR dan pemuda Indonesia. 
+                  </p>
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center; max-width: 300px; text-align: center;">
+                    <img src="Gambar/letnal.jpg" alt="Gambar Jenderal Sudirman" width="90">
+                    <p style="color: white; padding: 1.4rem 5%;">
+                      K.H. Saifuddin Zuhri :
+                      <br>
+                      <br>
+                      Ulama pemimpin Laskar Hizbullah yang berjuang bersama TKR dan pemuda Indonesia. 
+                    </p>
+                  </div>
+                  <div style="display: flex; flex-direction: column; align-items: center; max-width: 300px; text-align: center;">
+                    <img src="Gambar/soe.jpg" alt="Gambar Jenderal Sudirman" width="90">
+                    <p style="color: white; padding: 1.4rem 5%;">
+                      K.H. Saifuddin Zuhri :
+                      <br>
+                      <br>
+                      Ulama pemimpin Laskar Hizbullah yang berjuang bersama TKR dan pemuda Indonesia. 
+                    </p>
+                  </div>
+              </div>
+              <div style="display: flex; gap: 20px; justify-content: center; margin-top: 10vh;">
+                <div style="display: flex; flex-direction: column; align-items: center; max-width: 300px; text-align: center;">
+                  <img src="Gambar/WhatsApp Image 2025-05-06 at 17.00.03_72e615ca.jpg" alt="Gambar Jenderal Sudirman" width="90">
+                  <p style="color: white; padding: 1.4rem 5%;">
+                    GPH Djatikusumo :
+                    <br>
+                    <br>
+                    Komandan divisi IV yang bertugas melacak dan mengepung pasukan asing.
+                  </p>
+                </div>
+                
+                <div style="display: flex; flex-direction: column; align-items: center; max-width: 300px; text-align: center;">
+                  <img src="Gambar/kh saifudim.jpg" alt="Gambar Jenderal Sudirman" width="90">
+                  <p style="color: white; padding: 1.4rem 5%;">
+                    K.H. Saifuddin Zuhri :
+                    <br>
+                    <br>
+                    Ulama pemimpin Laskar Hizbullah yang berjuang bersama TKR dan pemuda Indonesia. 
+                  </p>
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center; max-width: 300px; text-align: center;">
+                    <img src="Gambar/letnal.jpg" alt="Gambar Jenderal Sudirman" width="90">
+                    <p style="color: white; padding: 1.4rem 5%;">
+                      K.H. Saifuddin Zuhri :
+                      <br>
+                      <br>
+                      Ulama pemimpin Laskar Hizbullah yang berjuang bersama TKR dan pemuda Indonesia. 
+                    </p>
+                  </div>
+              </div>
+        </div>
+    </div>
+                
+                    <!-- Tokoh-tokoh yang terlibat dalam Pertempuran Ambarawa adalah :
+                    <img src="Gambar/hd2.jpg" alt="" class="class">
                     Jenderal Sudirman : Panglima perang yang memimpin pasukan TKR dalam Pertempuran Ambarawa. Ia menggunakan strategi "Supit Urang" yang berhasil mengusir pasukan Sekutu dan Belanda.
                     <br> 
                     <br>
                     Letnan Kolonel Isdiman : Perwira TKR Banyumas yang gugur dalam Pertempuran Ambarawa. Ia ahli taktik yang mengatur siasat pertempuran. 
                     <br>
                     <br>
-                    GPH Djatikusumo : Komandan divisi IV yang bertugas melacak dan mengepung pasukan asing. 
+                    
                     <br>
                     <br>
-                    K.H. Saifuddin Zuhri : Ulama pemimpin Laskar Hizbullah yang berjuang bersama TKR dan pemuda Indonesia. 
+                    
                     <br>
                     <br>
                     Letkol Sarbini Martodiharjo : Perwira yang terlibat dalam Pertempuran Ambarawa. 
@@ -114,14 +194,15 @@
                     <br>
                     <br>
                     Surono Reksodimejo : Tokoh yang terlibat dalam PertempuranAmbarawa.
-                    <br>
-                </p>
-        </div>
-    </div>
+                    <br> -->
+                <!-- <div class="Fotoaw">
+                    <img src="Gambar/hd2.jpg" alt="" class="class">
+                    <img src="Gambar/BKR announced the independence of Indonesia, 18 August 1945_.jpeg" alt="" class="class">
+                </div> -->
 
-    <div class="p" onclick="muncul('options5')">
-        <h2>Strategi Pertempuran</h2>
-        <div class="text" id="options5">
+                <div class="p" onclick="muncul('options5')" id="target5">
+                    <h2>Strategi Pertempuran</h2>
+                    <div class="text" id="options5">
             <p>
                 Strategi pertempuran Ambarawa yang digunakan oleh pasukan Indonesia adalah strategi gelar supit urang. 
                 <br>Taktik ini digagas oleh Kolonel Soedirman, yang saat itu memimpin Palagan Ambarawa. 
@@ -147,7 +228,7 @@
         </div>
     </div>
 
-    <div class="p" onclick="muncul('options6')">
+    <div class="p" onclick="muncul('options6')" id="target6">
         <h2>Hasil Pertempuran</h2>
         <div class="text" id="options6">
                 <p>
@@ -163,7 +244,7 @@
         </div>
     </div>
 
-    <div class="p" onclick="muncul('options7')">
+    <div class="p" onclick="muncul('options7')" id="target7">
         <h2>Nilai Yang Dapat Di Terapkan</h2>
         <div class="text" id="options7">
                 <p>Dalam peristiwa Perang Ambarawa (20 November - 15 Desember 1945), terdapat banyak nilai-nilai luhur yang bisa diterapkan. <br> Beberapa nilai tersebut antara lain :
