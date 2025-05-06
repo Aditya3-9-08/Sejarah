@@ -38,14 +38,14 @@ body {
 
 .deskripsi {
     padding: 3rem;
-    background-color: #eaeaea;
+    background-color: #E4E0E1;
     border-radius: 10px;
     margin-bottom: 2rem;
 }
 
 .deskripsi h1 {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
     color: #4b2e2e; /* Warna gelap agar kontras */
 }
 
